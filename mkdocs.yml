@@ -4,3 +4,7 @@ nav:
     - About: about.md
 theme:
     name: material
+    font:
+        text: Montserrat
+plugins:
+    - search
