@@ -16,7 +16,8 @@ theme:
         - navigation.tabs
         - header.autohide
 plugins:
-    - tags
+    - tags:
+        tags_file: tags.md
     - search:
         lang:
             - fr
