@@ -20,6 +20,8 @@ theme:
         - navigation.indexes
         - navigation.tabs
         - header.autohide
+extra_css:
+  - stylesheets/style.css
 plugins:
     - tags:
         tags_file: tags.md
