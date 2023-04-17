@@ -2,7 +2,9 @@
 
 Due to the wide variety of thing I'm learning my brain cannot remember
 it all.
-So this website will help me document my knowledges.
+
+So this website will help me document my knowledge.
+
 Like a second brain.
 
 Credit to:
