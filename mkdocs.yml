@@ -15,6 +15,7 @@ theme:
     languages: fr
     features:
         - search.suggest
+        - search.highlight
         - navigation.instant
         - navigation.indexes
         - navigation.tabs
