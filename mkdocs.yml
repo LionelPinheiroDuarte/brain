@@ -2,8 +2,12 @@ site_name: My Brain
 nav:
     - Home: index.md
     - About: about.md
-    - Frontend: ./frontend/react.md
-      # - ./frontend/nextjs.md
+    - Frontend:
+        - frontend/index.md
+        - React:
+            - Components: frontend/react/components.md
+        - Nextjs: 
+            - Routing: frontend/nextjs/routing.md
 theme:
     name: material
     font:
