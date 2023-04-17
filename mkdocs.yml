@@ -2,9 +2,22 @@ site_name: My Brain
 nav:
     - Home: index.md
     - About: about.md
+    - Frontend: ./frontend/react.md
+      # - ./frontend/nextjs.md
 theme:
     name: material
     font:
         text: Montserrat
+    languages: fr
+    features:
+        - search.suggest
+        - navigation.instant
+        - navigation.indexes
+        - navigation.tabs
+        - header.autohide
 plugins:
-    - search
+    - tags
+    - search:
+        lang:
+            - fr
+            - en
