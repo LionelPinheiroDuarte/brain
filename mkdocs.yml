@@ -1,3 +1,6 @@
-site_name: Brain
+site_name: My Brain
+nav:
+    - Home: index.md
+    - About: about.md
 theme:
     name: material
