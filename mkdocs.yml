@@ -1,17 +1,16 @@
 site_name: My Brain
 nav:
     - Home: index.md
-    - About: about.md
     - Frontend:
         - frontend/index.md
         - React:
             - Components: frontend/react/components.md
-        - Nextjs: 
+        - Nextjs:
             - Routing: frontend/nextjs/routing.md
 theme:
     name: material
     font:
-        text: Montserrat
+        text: Inter
     languages: fr
     features:
         - search.suggest
@@ -23,8 +22,6 @@ theme:
 extra_css:
   - stylesheets/style.css
 plugins:
-    - tags:
-        tags_file: tags.md
     - search:
         lang:
             - fr
