@@ -1,4 +1,9 @@
-site_name: My Brain
+site_name: Brain
+site_author: Lionel Pinheiro Duarte
+site_url: https://liopin.github.io/brain/
+repo_url: https://github.com/liopin/brain
+repo_name: liopin/brain
+
 nav:
     - Home: index.md
     - Frontend:
@@ -16,9 +21,14 @@ theme:
         - search.suggest
         - search.highlight
         - navigation.instant
-        - navigation.indexes
         - navigation.tabs
+        - navigation.path
+        - navigation.top
+        - toc.follow
+        - toc.integrate
+        - navigation.indexes
         - header.autohide
+        - navigation.sections
 extra_css:
   - stylesheets/style.css
 plugins:
@@ -26,3 +36,8 @@ plugins:
         lang:
             - fr
             - en
+extra:
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/Liopin
+          name: Github

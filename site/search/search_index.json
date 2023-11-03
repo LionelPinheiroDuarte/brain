@@ -1,0 +1,1 @@
+{"config":{"lang":["fr","en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Title","text":""},{"location":"frontend/nextjs/routing/","title":"Routing","text":"<p>This how routing works</p>"}]}
