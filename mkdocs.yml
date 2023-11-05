@@ -12,6 +12,10 @@ nav:
             - Components: frontend/react/components.md
         - Nextjs:
             - Routing: frontend/nextjs/routing.md
+    - Backend:
+        - backend/index.md
+    - Reseau:
+        - reseau/index.md
 theme:
     name: material
     font:
