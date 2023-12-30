@@ -1,8 +1,8 @@
 site_name: Brain
 site_author: Lionel Pinheiro Duarte
-site_url: https://liopin.github.io/brain/
-repo_url: https://github.com/liopin/brain
-repo_name: liopin/brain
+site_url: https://lionelpinheiroduarte.github.io/brain/frontend/
+repo_url: https://github.com/lionelpinheiroduarte/brain
+repo_name: lionelpinheiroduarte/brain
 
 nav:
     - Home: index.md
