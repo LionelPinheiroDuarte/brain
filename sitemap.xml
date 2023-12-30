@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://liopin.github.io/brain/</loc>
+         <loc>https://lionelpinheiroduarte.github.io/brain/frontend/</loc>
          <lastmod>2023-12-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://liopin.github.io/brain/backend/</loc>
+         <loc>https://lionelpinheiroduarte.github.io/brain/frontend/backend/</loc>
          <lastmod>2023-12-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://liopin.github.io/brain/frontend/</loc>
+         <loc>https://lionelpinheiroduarte.github.io/brain/frontend/frontend/</loc>
          <lastmod>2023-12-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://liopin.github.io/brain/reseau/</loc>
+         <loc>https://lionelpinheiroduarte.github.io/brain/frontend/reseau/</loc>
          <lastmod>2023-12-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
