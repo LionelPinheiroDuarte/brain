@@ -17,6 +17,8 @@ theme:
     font:
         text: Inter
     languages: fr
+    palette:
+        primary: white
     features:
         - search.suggest
         - search.highlight
