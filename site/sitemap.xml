@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://lionelpinheiroduarte.github.io/brain/frontend/</loc>
-         <lastmod>2023-12-30</lastmod>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lionelpinheiroduarte.github.io/brain/frontend/backend/</loc>
-         <lastmod>2023-12-30</lastmod>
+         <loc>https://lionelpinheiroduarte.github.io/brain/frontend/network/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lionelpinheiroduarte.github.io/brain/frontend/frontend/</loc>
-         <lastmod>2023-12-30</lastmod>
+         <loc>https://lionelpinheiroduarte.github.io/brain/frontend/windows/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lionelpinheiroduarte.github.io/brain/frontend/reseau/</loc>
-         <lastmod>2023-12-30</lastmod>
+         <loc>https://lionelpinheiroduarte.github.io/brain/frontend/windows/windowsserver/</loc>
+         <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

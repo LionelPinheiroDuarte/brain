@@ -1,21 +1,20 @@
 site_name: Brain
 site_author: Lionel Pinheiro Duarte
-site_url: https://lionelpinheiroduarte.github.io/brain/frontend/
+site_url: https://lionelpinheiroduarte.github.io/brain/
 repo_url: https://github.com/lionelpinheiroduarte/brain
 repo_name: lionelpinheiroduarte/brain
 
 nav:
     - Home: index.md
-    - Frontend:
-        - frontend/index.md
-    - Backend:
-        - backend/index.md
     - Reseau:
-        - reseau/index.md
+        - network/index.md
+    - Windows:
+        - windows/index.md
+        - Windows Server: windows/windowsserver.md
 theme:
     name: material
     font:
-        text: Inter
+        text: Poppins 
     languages: fr
     palette:
         primary: white
