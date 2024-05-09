@@ -1,1 +1,1 @@
-{"config":{"lang":["fr","en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Home","text":""},{"location":"tools/","title":"Index","text":""}]}
+{"config":{"lang":["fr","en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Home","text":""},{"location":"windows/","title":"Windows","text":""}]}
