@@ -40,5 +40,5 @@ plugins:
 extra:
     social:
         - icon: fontawesome/brands/github
-          link: https://github.com/Liopin
+          link: https://github.com/lionelpinheiroduarte
           name: Github
