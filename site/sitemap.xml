@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://lionelpinheiroduarte.github.io/brain/frontend/</loc>
+         <loc>https://lionelpinheiroduarte.github.io/brain/</loc>
          <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lionelpinheiroduarte.github.io/brain/frontend/network/</loc>
+         <loc>https://lionelpinheiroduarte.github.io/brain/network/</loc>
          <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lionelpinheiroduarte.github.io/brain/frontend/windows/</loc>
+         <loc>https://lionelpinheiroduarte.github.io/brain/windows/</loc>
          <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lionelpinheiroduarte.github.io/brain/frontend/windows/windowsserver/</loc>
+         <loc>https://lionelpinheiroduarte.github.io/brain/windows/windowsserver/</loc>
          <lastmod>2024-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>

@@ -1,4 +1,6 @@
 [data-md-color-primary="white"]{
       --md-typeset-a-color: #414141;
-      --md-typeset-a-color: #000;
+}
+.md-nav__link[href]:hover{
+      color: #414141;
 }
