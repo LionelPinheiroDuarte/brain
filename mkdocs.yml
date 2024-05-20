@@ -10,7 +10,7 @@ nav:
         - network/index.md
     - Base de donnée:
         - database/index.md
-        - SQL: database/sql.md
+        - SQL: database/sql/index.md
     - Windows:
         - windows/index.md
         - Windows Server: windows/windowsserver.md
@@ -33,6 +33,7 @@ theme:
         - navigation.indexes
         - header.autohide
         - navigation.sections
+        - content.code.copy
 extra_css:
   - stylesheets/style.css
 plugins:
