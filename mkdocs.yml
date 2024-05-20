@@ -8,6 +8,9 @@ nav:
     - Home: index.md
     - Reseau:
         - network/index.md
+    - Base de donnée:
+        - database/index.md
+        - SQL: database/sql.md
     - Windows:
         - windows/index.md
         - Windows Server: windows/windowsserver.md
