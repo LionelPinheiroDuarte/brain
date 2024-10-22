@@ -1,6 +1,6 @@
 # Brain 🧠
 
-The goals of this project are to show case my work and skills to potential recruiters.
+The goal is to have a place where I keep track of what I learn.
 
 ## Build with 🛠
 - [Mkdocs](https://www.mkdocs.org/)
