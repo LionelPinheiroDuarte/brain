@@ -1,11 +1,25 @@
-# Brain
+# Brain 🧠
 
-Due to the wide variety of thing I'm learning my brain cannot remember
-it all.
+The goals of this project are to show case my work and skills to potential recruiters.
 
-So this website will help me document my knowledge.
+## Build with 🛠
+- [Mkdocs](https://www.mkdocs.org/)
+- [Theme Material](https://squidfunk.github.io/mkdocs-material/)
+- [Deployed with github pages](https://pages.github.com/)
+### Goals 🎯
 
-Like a second brain.
+### Ideas of improvments 📝
+- [ ] Nigh mode
+## Getting start🚀
+### Prerequisites 
+- [Python](https://www.python.org/)
+### Installation 🔧
+```
+pip install mkdocs
+git clone https://github.com/LionelPinheiroDuarte/brain.git
+cd brain
+mkdocs serve
+```
 
-Credit to:
-  - Rob Muhlestein [github](https://github.com/rwxrob) for the idea
+## Acknowledgement 🧑‍🤝‍🧑
+  - [Rob Muhlestein for the idea](https://github.com/rwxrob) 
