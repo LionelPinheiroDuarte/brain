@@ -15,9 +15,9 @@ The goal is to have a place where I keep track of what I learn.
 - [Python](https://www.python.org/)
 ### Installation 🔧
 ```
-pip install mkdocs
 git clone https://github.com/LionelPinheiroDuarte/brain.git
 cd brain
+pip install -r requirements.txt
 mkdocs serve
 ```
 
