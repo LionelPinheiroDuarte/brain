@@ -1,24 +1,39 @@
-site_name: My Brain
+site_name: Brain
+site_author: Lionel Pinheiro Duarte
+site_url: https://lionelpinheiroduarte.github.io/brain/
+repo_url: https://github.com/lionelpinheiroduarte/brain
+repo_name: lionelpinheiroduarte/brain
+
 nav:
     - Home: index.md
-    - Frontend:
-        - frontend/index.md
-        - React:
-            - Components: frontend/react/components.md
-        - Nextjs:
-            - Routing: frontend/nextjs/routing.md
+    - Reseau:
+        - network/index.md
+    - Base de donnée:
+        - database/index.md
+        - SQL: database/sql/index.md
+    - Windows:
+        - windows/index.md
+        - Windows Server: windows/windowsserver.md
 theme:
     name: material
     font:
-        text: Inter
+        text: Poppins 
     languages: fr
+    palette:
+        primary: white
     features:
         - search.suggest
         - search.highlight
         - navigation.instant
-        - navigation.indexes
         - navigation.tabs
+        - navigation.path
+        - navigation.top
+        - toc.follow
+        - toc.integrate
+        - navigation.indexes
         - header.autohide
+        - navigation.sections
+        - content.code.copy
 extra_css:
   - stylesheets/style.css
 plugins:
@@ -26,3 +41,8 @@ plugins:
         lang:
             - fr
             - en
+extra:
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/lionelpinheiroduarte
+          name: Github
