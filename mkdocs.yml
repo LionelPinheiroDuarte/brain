@@ -6,14 +6,9 @@ repo_name: lionelpinheiroduarte/brain
 
 nav:
     - Home: index.md
-    - Reseau:
-        - network/index.md
     - Base de donnée:
         - database/index.md
         - SQL: database/sql/index.md
-    - Windows:
-        - windows/index.md
-        - Windows Server: windows/windowsserver.md
 theme:
     name: material
     font:
