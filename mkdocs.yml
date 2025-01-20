@@ -5,8 +5,10 @@ repo_url: https://github.com/lionelpinheiroduarte/brain
 repo_name: lionelpinheiroduarte/brain
 
 nav:
-    - Home: index.md
-    - Base de donnée:
+    - Home: 
+        - home/index.md
+        - home/ranking.md
+    - Data base:
         - database/index.md
         - SQL: database/sql/index.md
 theme:
@@ -40,4 +42,4 @@ extra:
     social:
         - icon: fontawesome/brands/github
           link: https://github.com/lionelpinheiroduarte
-          name: Github
+          name: github

@@ -1,4 +1,4 @@
-# Home
+## Système de notation 
 
 | Note | Description |
 |------|-------------|
