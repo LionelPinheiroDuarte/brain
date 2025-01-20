@@ -10,7 +10,7 @@ nav:
         - home/ranking.md
     - Data base:
         - database/index.md
-        - SQL: database/sql/index.md
+        - SQL: database/sql/sql.md
 theme:
     name: material
     font:
