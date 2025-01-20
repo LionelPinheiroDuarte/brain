@@ -38,15 +38,16 @@ plugins:
         lang:
             - fr
             - en
+    - i18n:
+        languages:
+        - locale: fr
+          name: Français
+          build: true
+          default: true
+        - locale: en
+          name: English
+          build: true
 extra:
-    extra:
-    alternate:
-        - name: Français
-          link: /fr/ 
-          lang: fr 
-        - name: English 
-          link: /en/
-          lang: en
     social:
         - icon: fontawesome/brands/github
           link: https://github.com/lionelpinheiroduarte
