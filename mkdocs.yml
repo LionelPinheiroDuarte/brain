@@ -2,13 +2,13 @@ site_name: Brain
 site_author: Lionel Pinheiro Duarte
 site_url: https://lionelpinheiroduarte.github.io/brain/
 repo_url: https://github.com/lionelpinheiroduarte/brain
-repo_name: lionelpinheiroduarte/brain
+repo_name: lionelpinheiroduarte/brain/
 
 nav:
-    - Home: 
-        - home/index.md
-        - home/ranking.md
-    - Data base:
+    - Acceuil: 
+        - home/index.fr.md
+        - Notation: home/notation.fr.md
+    - Base de donnée:
         - database/index.md
         - SQL: database/sql/sql.md
 theme:
@@ -51,6 +51,11 @@ plugins:
         - locale: en
           name: English
           build: true
+        nav:
+          - Home: home/index.en.md
+          - Data Base: 
+            - database/index.en.md
+            - SQL: database/sql.en.md
 extra:
     social:
         - icon: fontawesome/brands/github
