@@ -1,6 +1,7 @@
 # SQL
 
-Content only available in english.
+!!! note
+    Content only available in english.
 
 | Compétences | Notes | But |
 |-------------|-------|----------|

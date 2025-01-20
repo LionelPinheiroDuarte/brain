@@ -31,6 +31,10 @@ theme:
         - header.autohide
         - navigation.sections
         - content.code.copy
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 extra_css:
   - stylesheets/style.css
 plugins:
