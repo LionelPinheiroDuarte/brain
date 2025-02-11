@@ -6,8 +6,7 @@ repo_name: lionelpinheiroduarte/brain/
 
 nav:
     - Acceuil: 
-        - home/index.fr.md
-        - Notation: home/notation.fr.md
+        - index.fr.md
     - Base de donnée:
         - database/index.md
         - SQL: database/sql/sql.md
@@ -21,7 +20,6 @@ theme:
     features:
         - search.suggest
         - search.highlight
-        - navigation.instant
         - navigation.tabs
         - navigation.path
         - navigation.top
@@ -47,15 +45,15 @@ plugins:
         - locale: fr
           name: Français
           build: true
-          default: true
         - locale: en
           name: English
           build: true
-        nav:
-          - Home: home/index.en.md
-          - Data Base: 
-            - database/index.en.md
-            - SQL: database/sql.en.md
+          default: true
+          nav:
+            - Home: index.en.md
+            - Data Base: 
+              - database/index.en.md
+              - SQL: database/sql/sql.en.md
 extra:
     social:
         - icon: fontawesome/brands/github
