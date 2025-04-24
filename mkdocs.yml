@@ -14,12 +14,13 @@ nav:
     - Linux:
         - linux/linux.fr.md
     - Réseau:
-        - network/réseau.fr.md
+        - network/index.fr.md
+        - Réseau: network/networking.fr.md
 theme:
     name: material
     font:
         text: Poppins 
-    languages: fr
+    languages: en
     palette:
         primary: white
     features:
@@ -65,6 +66,7 @@ plugins:
               - Linux: linux/linux.en.md
               - LPI Essentials: linux/LPI_Essentials.en.md
             - Networking:
+              - network/index.en.md
               - Networking: network/networking.en.md
 extra:
     social:
