@@ -13,6 +13,8 @@ nav:
         - SQL: database/sql/sql.md
     - Linux:
         - linux/linux.fr.md
+    - Réseau:
+        - network/réseau.fr.md
 theme:
     name: material
     font:
@@ -62,6 +64,8 @@ plugins:
             - Linux:
               - Linux: linux/linux.en.md
               - LPI Essentials: linux/LPI_Essentials.en.md
+            - Networking:
+              - Networking: network/networking.en.md
 extra:
     social:
         - icon: fontawesome/brands/github
