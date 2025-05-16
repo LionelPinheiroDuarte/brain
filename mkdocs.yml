@@ -4,20 +4,6 @@ site_url: https://lionelpinheiroduarte.github.io/brain/
 repo_url: https://github.com/lionelpinheiroduarte/brain
 repo_name: lionelpinheiroduarte/brain/
 
-nav:
-    - Acceuil: 
-        - index.fr.md
-        - Ranking: ./home/notation.fr.md
-    - Base de donnée:
-        - database/index.md
-        - SQL: database/sql/sql.md
-    - Linux:
-        - linux/linux.fr.md
-    - Réseau:
-        - network/index.fr.md
-        - Réseau: network/networking.fr.md
-    - DevOps:
-        - devops/index.en.md
 theme:
     name: material
     font:
@@ -46,13 +32,9 @@ extra_css:
 plugins:
     - search:
         lang:
-            - fr
             - en
     - i18n:
         languages:
-        - locale: fr
-          name: Français
-          build: true
         - locale: en
           name: English
           build: true
