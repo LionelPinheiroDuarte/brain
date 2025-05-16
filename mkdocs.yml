@@ -4,6 +4,22 @@ site_url: https://lionelpinheiroduarte.github.io/brain/
 repo_url: https://github.com/lionelpinheiroduarte/brain
 repo_name: lionelpinheiroduarte/brain/
 
+
+nav:
+    - Home: 
+      - index.en.md
+      - Ranking: ./home/ranking.en.md
+    - Database: 
+      - database/index.en.md
+      - SQL: database/sql/sql.en.md
+    - Linux:
+      - Linux: linux/linux.en.md
+      - LPI Essentials: linux/LPI_Essentials.en.md
+    - Networking:
+      - network/index.en.md
+      - Networking: network/networking.en.md
+    - DevOps:
+      - devops/index.en.md
 theme:
     name: material
     font:
@@ -33,27 +49,7 @@ plugins:
     - search:
         lang:
             - en
-    - i18n:
-        languages:
-        - locale: en
-          name: English
-          build: true
-          default: true
-          nav:
-            - Home: 
-              - index.en.md
-              - Ranking: ./home/ranking.en.md
-            - Database: 
-              - database/index.en.md
-              - SQL: database/sql/sql.en.md
-            - Linux:
-              - Linux: linux/linux.en.md
-              - LPI Essentials: linux/LPI_Essentials.en.md
-            - Networking:
-              - network/index.en.md
-              - Networking: network/networking.en.md
-            - DevOps:
-              - devops/index.en.md
+          
 extra:
     social:
         - icon: fontawesome/brands/github
