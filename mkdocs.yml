@@ -16,6 +16,8 @@ nav:
     - Réseau:
         - network/index.fr.md
         - Réseau: network/networking.fr.md
+    - DevOps:
+        - devops/index.en.md
 theme:
     name: material
     font:
@@ -68,6 +70,8 @@ plugins:
             - Networking:
               - network/index.en.md
               - Networking: network/networking.en.md
+            - DevOps:
+              - devops/index.en.md
 extra:
     social:
         - icon: fontawesome/brands/github
