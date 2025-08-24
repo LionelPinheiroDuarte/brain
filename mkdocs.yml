@@ -7,10 +7,8 @@ repo_name: lionelpinheiroduarte/brain/
 nav:
     - Home: 
       - Index: index.en.md
-      - Ranking: ./home/ranking.en.md
     - Linux:
-      - Index: linux/linux.en.md
-      - LPI Essentials: linux/LPI_Essentials.en.md
+      - Chapter 1: linux/chapter1.md
 theme:
     name: material
     font:
