@@ -12,7 +12,7 @@ nav:
       - Index: linux/linux.en.md
       - LPI Essentials: linux/LPI_Essentials.en.md
 theme:
-    name: mkdocs
+    name: material
     font:
         text: Poppins 
     languages: en

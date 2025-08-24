@@ -1,5 +1,6 @@
 jinja2>=3.0
 markdown>=3.2
+mkdocs-material
 mkdocs>=1.4.2
 mkdocs-static-i18n >= 1.0.0
 mkdocs-material-extensions>=1.1
