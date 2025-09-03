@@ -1,0 +1,22 @@
+:root{
+      --accent: #4e75ba;
+}
+
+[data-md-color-primary="white"]{
+      --md-typeset-a-color: #414141;
+}
+.md-nav__link[href]:hover{
+      color: #414141;
+}
+
+.md-header__title > .md-header__ellipsis{
+      color: var(--accent);
+}
+
+.md-typeset h1{
+      color: var(--accent);
+      font-weight: 600;
+}
+.md-typeset h2{
+      font-weight: 500;
+}
