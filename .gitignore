@@ -7,6 +7,10 @@ __pycache__/
 venv/
 .env/
 .venv/
+lib/
+lib64/
+bin/
+pyvenv.cfg
 
 # Distribution / packaging
 build/
