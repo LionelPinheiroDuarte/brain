@@ -16,7 +16,6 @@ nav:
       - Containers: ./devops/containers.md
   - Tools:
       - Emacs: tools/emacs.md
-      - Test: tools/test.md
 theme:
   name: material
   font:
@@ -34,7 +33,6 @@ theme:
     - navigation.sections
     - navigation.indexes
     - toc.follow
-    - toc.integrate
     - header.autohide
     - content.code.copy
 markdown_extensions:
