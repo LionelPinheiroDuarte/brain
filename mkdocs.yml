@@ -6,16 +6,11 @@ repo_name: lionelpinheiroduarte/brain/
 nav:
   - Home:
       - Index: index.en.md
-  - Basics:
-      - Index: ./basics/index.md
-      - DNS: ./basics/dns.md
   - Linux:
       - Fundamentals: linux/chapter1.md
   - Devops:
-      - Index: ./devops/index.md
       - Terraform: ./devops/terraform.md
   - Tools:
-      - Emacs: tools/emacs.md
       - Claude: tools/claude.md
 theme:
   name: material
