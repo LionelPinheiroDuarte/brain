@@ -1,4 +1,3 @@
-1: The Linux Community and a Career in Open Source
 # Linux - System Administration
 ## Chapter 1: Fundamentals
 
@@ -40,6 +39,13 @@ Alongside, [**Richard Stallman**](https://stallman.org/) in **1983** created the
 > 
 > **GNU** is a recursive acronym for **"GNU's Not Unix,"** and it's pronounced just like the African horned antelope that is its namesake.
 
+| Skill | Score |
+|-------|:-----:|
+| Describe the role of the Linux kernel | 5 |
+| Explain the difference between Linux and GNU/Linux | 5 |
+| Describe the history of UNIX and its relation to Linux | 5 |
+| Explain why Linux is UNIX-like but not UNIX certified | 4 |
+
 ---
 
 ## Open Source
@@ -53,6 +59,13 @@ It was not the first software doing so, but since it was built **from scratch**,
 > ### 💡 **Consider This**
 > 
 > The source code may be written in any of hundreds of different languages. Linux happens to be written in **C**, a **versatile** and relatively **easy language to learn**, which shares history with the original UNIX. This decision, made long before its utility was proven, turned out to be **crucial** in its nearly universal adoption as the primary operating system for **internet servers**.
+
+| Skill | Score |
+|-------|:-----:|
+| Explain what open source software is | 5 |
+| Differentiate open source vs closed source licensing | 5 |
+| Describe common open source licenses (GPL, MIT, Apache) | 3 |
+| Understand the concept of copyleft | 3 |
 
 ---
 
@@ -81,6 +94,13 @@ The **major players** are:
 
 The visible differences can range from **file locations** to **political philosophies**.
 
+| Skill | Score |
+|-------|:-----:|
+| Identify major Linux distributions and their families | 5 |
+| Explain the role of a package manager | 4 |
+| Describe use cases for different distributions | 4 |
+| Differentiate desktop, server, and embedded distributions | 4 |
+
 ---
 
 ## Command Line Interface (CLI)
@@ -96,22 +116,29 @@ Traditionally, OS offer both **GUI** and **CLI** interfaces. The **CLI** provide
 - ✅ **Greater speed**
 - ✅ **Ability to automate tasks** through **scripting**
 
+| Skill | Score |
+|-------|:-----:|
+| Describe the difference between GUI and CLI | 5 |
+| Explain the advantages of CLI over GUI | 5 |
+| Understand what a shell is and its role | 5 |
+| Use basic shell commands (ls, cd, pwd, echo) | 5 |
+
 ---
 
-## 📚 References and LPIC-1 Objectives
+## 📚 References — LPI Linux Essentials (010-160)
 
-**Chapter 2:**
-- **1.1** Knowledge of Linux development and major distributions
-- **4.1** Choosing an Operating System
+**Topic 1: The Linux Community and a Career in Open Source**
+- **1.1** Linux Evolution and Popular Operating Systems
+- **1.3** Understanding Open Source Software and Licensing
+- **1.4** ICT Skills and Working in Linux
 
 ### Official Links:
 - [Linux Professional Institute (LPI)](https://www.lpi.org/)
-- [LPIC-1 Exam Objectives](https://www.lpi.org/our-certifications/lpic-1-overview/)
+- [Linux Essentials Exam Objectives](https://www.lpi.org/our-certifications/linux-essentials-overview/)
 - [The Linux Kernel Archives](https://kernel.org/)
 - [GNU Operating System](https://www.gnu.org/)
-- [Linux Foundation](https://www.linuxfoundation.org/)
 
 ---
 
 ### 🔑 **Important Keywords:**
-`kernel`, `GNU/Linux`, `open source`, `distributions`, `CLI`, `GUI`, `UNIX-like`, `C language`, `package manager`, `scripting`, `closed source license`, `reverse engineer`
+`kernel`, `GNU/Linux`, `open source`, `distributions`, `CLI`, `GUI`, `UNIX-like`, `C language`, `package manager`, `scripting`, `closed source license`, `reverse engineer`, `copyleft`, `GPL`
