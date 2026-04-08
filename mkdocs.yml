@@ -16,6 +16,7 @@ nav:
       - Terraform: ./devops/terraform.md
   - Tools:
       - Emacs: tools/emacs.md
+      - Claude: tools/claude.md
 theme:
   name: material
   font:
