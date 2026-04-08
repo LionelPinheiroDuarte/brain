@@ -10,10 +10,10 @@ nav:
       - Index: ./basics/index.md
       - DNS: ./basics/dns.md
   - Linux:
-      - Chapter 1: linux/chapter1.md
+      - Fundamentals: linux/chapter1.md
   - Devops:
       - Index: ./devops/index.md
-      - Containers: ./devops/containers.md
+      - Terraform: ./devops/terraform.md
   - Tools:
       - Emacs: tools/emacs.md
 theme:
