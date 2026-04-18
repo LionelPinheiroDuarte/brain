@@ -10,6 +10,7 @@ nav:
       - Fundamentals: linux/chapter1.md
   - Devops:
       - Terraform: ./devops/terraform.md
+      - Docker: ./devops/docker.md
   - Tools:
       - Claude: tools/claude.md
 theme:
