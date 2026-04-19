@@ -97,7 +97,7 @@ services:
     build:
       context: ..
       dockerfile: Dockerfile
-    container_name: job-listing-app
+    container_name: infra-lab-app
     ports:
       - "${APP_PORT:-8000}:8000"
     environment:
@@ -236,10 +236,10 @@ services:
 networks:
   app-network:
     driver: bridge
-    name: job-listing-app
+    name: infra-lab-app
   monitoring-network:
     driver: bridge
-    name: job-listing-monitoring
+    name: infra-lab-monitoring
 ```
 
 Services on the same network resolve each other **by container name** — no IP addresses needed.
@@ -268,7 +268,7 @@ volumes:
   postgres_data:
     name: postgres_data
   prometheus_data:
-    name: job-listing-prometheus-data
+    name: infra-lab-prometheus-data
 ```
 
 **Named volumes** are managed by Docker — data survives `docker compose down`.  
@@ -301,7 +301,7 @@ docker compose down -v                  # Also remove volumes
 docker compose restart app              # Restart one service
 
 # Build
-docker build -t job-listing:latest .    # Build image manually
+docker build -t infra-lab:latest .    # Build image manually
 docker images                           # List images
 docker rmi <image>                      # Remove image
 ```
@@ -330,7 +330,7 @@ Docker automates what requires manual work on a VM:
 | Rollback | Manual, risky | `docker compose down/up` with tags |
 | Reproducibility | ~80% | 100% |
 
-**Measured on job-listing project:**
+**Measured on infra-lab project:**
 - VM deployment: 1 min 37 sec
 - Docker deployment: 13–16 sec (with health checks)
 - Memory: ~207 MB (VM) vs ~61 MB (3 containers)
