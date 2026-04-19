@@ -49,5 +49,51 @@ Claude Code supports **custom agents** — specialized assistants focused on a s
 
 ---
 
+---
+
+## Memory System
+
+Claude Code has a **persistent memory system across conversations**, stored as Markdown files under:
+
+```
+~/.claude/projects/<project-path>/memory/
+```
+
+### How it works
+
+At the start of each conversation, Claude automatically loads `MEMORY.md` (the index file) from that directory. This index points to individual memory files, each dedicated to a specific topic.
+
+When Claude learns something useful — a preference, a username, a constraint — it writes it to a memory file and registers it in `MEMORY.md`. In future conversations, it remembers without you having to repeat yourself.
+
+### Memory types
+
+| Type | Content |
+|---|---|
+| `user` | Profile, preferences, technical level, working style |
+| `feedback` | Things you corrected or validated — rules to follow going forward |
+| `project` | Current context: goals, decisions, deadlines |
+| `reference` | Where to find things: external tools, dashboards, tickets |
+
+### What is NOT saved
+
+- Code structure (derivable by reading the files)
+- Git history (available via `git log`)
+- Bug fix recipes (the fix is in the code)
+- Anything already documented in a `CLAUDE.md`
+
+### Example
+
+```
+~/.claude/projects/-home-eswine/memory/
+├── MEMORY.md              ← index (loaded automatically)
+└── user_github.md         ← "public GitHub username: LionelPinheiroDuarte"
+```
+
+> ### 💡 **Tip**
+>
+> You can ask Claude to save anything: *"remember that..."*. It will create or update the relevant memory file.
+
+---
+
 ### 🔑 **Important Keywords:**
-`claude-code`, `CLI`, `slash commands`, `plan mode`, `agents`, `Anthropic`, `MCP`, `terminal`
+`claude-code`, `CLI`, `slash commands`, `plan mode`, `agents`, `memory`, `Anthropic`, `MCP`, `terminal`
