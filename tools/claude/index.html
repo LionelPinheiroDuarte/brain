@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://lionelpinheiroduarte.github.io/brain/tools/claude/">
       
       
-        <link rel="prev" href="../../devops/terraform/">
+        <link rel="prev" href="../../devops/ansible/">
       
       
       
@@ -499,6 +499,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -561,6 +565,62 @@
     
   
     Terraform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../devops/docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../devops/ansible/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ansible
   
 
     
@@ -781,6 +841,78 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memory-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memory System
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Memory System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How it works
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memory-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memory types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-not-saved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is NOT saved
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 Tip
+      
+    </span>
+  </a>
+  
+</li>
+        
           <li class="md-nav__item">
   <a href="#important-keywords" class="md-nav__link">
     <span class="md-ellipsis">
@@ -912,6 +1044,78 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memory-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memory System
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Memory System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How it works
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memory-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memory types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-not-saved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is NOT saved
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 Tip
+      
+    </span>
+  </a>
+  
+</li>
+        
           <li class="md-nav__item">
   <a href="#important-keywords" class="md-nav__link">
     <span class="md-ellipsis">
@@ -1009,8 +1213,60 @@
 <li><code>git-manager</code> — handles all git operations: commits, branches, push/pull, conflict resolution</li>
 </ul>
 <hr />
+<hr />
+<h2 id="memory-system">Memory System</h2>
+<p>Claude Code has a <strong>persistent memory system across conversations</strong>, stored as Markdown files under:</p>
+<div class="highlight"><pre><span></span><code>~/.claude/projects/&lt;project-path&gt;/memory/
+</code></pre></div>
+<h3 id="how-it-works">How it works</h3>
+<p>At the start of each conversation, Claude automatically loads <code>MEMORY.md</code> (the index file) from that directory. This index points to individual memory files, each dedicated to a specific topic.</p>
+<p>When Claude learns something useful — a preference, a username, a constraint — it writes it to a memory file and registers it in <code>MEMORY.md</code>. In future conversations, it remembers without you having to repeat yourself.</p>
+<h3 id="memory-types">Memory types</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>user</code></td>
+<td>Profile, preferences, technical level, working style</td>
+</tr>
+<tr>
+<td><code>feedback</code></td>
+<td>Things you corrected or validated — rules to follow going forward</td>
+</tr>
+<tr>
+<td><code>project</code></td>
+<td>Current context: goals, decisions, deadlines</td>
+</tr>
+<tr>
+<td><code>reference</code></td>
+<td>Where to find things: external tools, dashboards, tickets</td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-is-not-saved">What is NOT saved</h3>
+<ul>
+<li>Code structure (derivable by reading the files)</li>
+<li>Git history (available via <code>git log</code>)</li>
+<li>Bug fix recipes (the fix is in the code)</li>
+<li>Anything already documented in a <code>CLAUDE.md</code></li>
+</ul>
+<h3 id="example">Example</h3>
+<div class="highlight"><pre><span></span><code>~/.claude/projects/-home-eswine/memory/
+├── MEMORY.md              ← index (loaded automatically)
+└── user_github.md         ← &quot;public GitHub username: LionelPinheiroDuarte&quot;
+</code></pre></div>
+<blockquote>
+<h3 id="tip">💡 <strong>Tip</strong></h3>
+<p>You can ask Claude to save anything: <em>"remember that..."</em>. It will create or update the relevant memory file.</p>
+</blockquote>
+<hr />
 <h3 id="important-keywords">🔑 <strong>Important Keywords:</strong></h3>
-<p><code>claude-code</code>, <code>CLI</code>, <code>slash commands</code>, <code>plan mode</code>, <code>agents</code>, <code>Anthropic</code>, <code>MCP</code>, <code>terminal</code></p>
+<p><code>claude-code</code>, <code>CLI</code>, <code>slash commands</code>, <code>plan mode</code>, <code>agents</code>, <code>memory</code>, <code>Anthropic</code>, <code>MCP</code>, <code>terminal</code></p>
 
 
 
