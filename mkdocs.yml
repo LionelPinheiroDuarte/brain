@@ -12,6 +12,7 @@ nav:
       - Terraform: ./devops/terraform.md
       - Docker: ./devops/docker.md
       - Ansible: ./devops/ansible.md
+      - Pipeline: ./devops/pipeline.md
   - Tools:
       - Claude: tools/claude.md
 theme:
