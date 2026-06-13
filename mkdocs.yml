@@ -13,6 +13,7 @@ nav:
       - Docker: ./devops/docker.md
       - Ansible: ./devops/ansible.md
       - Pipeline: ./devops/pipeline.md
+      - EAS (Expo): ./devops/eas.md
   - Tools:
       - Claude: tools/claude.md
 theme:
