@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://lionelpinheiroduarte.github.io/brain/tools/claude/">
       
       
-        <link rel="prev" href="../../devops/ansible/">
+        <link rel="prev" href="../../devops/eas/">
       
       
       
@@ -503,6 +503,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -621,6 +625,62 @@
     
   
     Ansible
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../devops/pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../devops/eas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EAS (Expo)
   
 
     
@@ -847,6 +907,67 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skills
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Skills">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File format
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frontmatter-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frontmatter options
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-skills-installed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example skills installed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#memory-system" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1050,6 +1171,67 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skills
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Skills">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File format
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frontmatter-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frontmatter options
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-skills-installed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example skills installed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#memory-system" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1214,6 +1396,69 @@
 </ul>
 <hr />
 <hr />
+<h2 id="skills">Skills</h2>
+<p><strong>Skills</strong> are reusable prompts that extend Claude Code's behavior, invoked as slash commands (e.g. <code>/grill-me</code>).</p>
+<ul>
+<li>Skills are defined as <strong>Markdown files</strong> in <code>~/.claude/skills/&lt;skill-name&gt;/SKILL.md</code></li>
+<li>Project-level skills go in <code>.claude/skills/&lt;skill-name&gt;/SKILL.md</code></li>
+<li>Changes take effect immediately — no restart needed</li>
+</ul>
+<h3 id="file-format">File format</h3>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
+<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">skill-name</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">What the skill does and when to use it (Claude reads this to auto-trigger)</span>
+<span class="nn">---</span>
+
+<span class="l l-Scalar l-Scalar-Plain">Instructions for Claude to follow when this skill is invoked...</span>
+</code></pre></div>
+<h3 id="frontmatter-options">Frontmatter options</h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>allowed-tools</code></td>
+<td>Pre-approve tools for this skill (e.g. <code>Bash(git:*) Read</code>)</td>
+</tr>
+<tr>
+<td><code>context: fork</code></td>
+<td>Run in an isolated subagent</td>
+</tr>
+<tr>
+<td><code>arguments: [arg1, arg2]</code></td>
+<td>Accept named arguments, referenced as <code>$arg1</code></td>
+</tr>
+<tr>
+<td><code>user-invocable: false</code></td>
+<td>Only Claude can use (background knowledge)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="usage">Usage</h3>
+<ul>
+<li>Invoke manually: <code>/skill-name</code></li>
+<li>Claude auto-triggers if your message matches the description</li>
+</ul>
+<h3 id="example-skills-installed">Example skills installed</h3>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>grill-me</code></td>
+<td>Interview relentlessly about a plan — stress-tests design decisions one question at a time</td>
+</tr>
+</tbody>
+</table>
+<hr />
 <h2 id="memory-system">Memory System</h2>
 <p>Claude Code has a <strong>persistent memory system across conversations</strong>, stored as Markdown files under:</p>
 <div class="highlight"><pre><span></span><code>~/.claude/projects/&lt;project-path&gt;/memory/
@@ -1266,7 +1511,7 @@
 </blockquote>
 <hr />
 <h3 id="important-keywords">🔑 <strong>Important Keywords:</strong></h3>
-<p><code>claude-code</code>, <code>CLI</code>, <code>slash commands</code>, <code>plan mode</code>, <code>agents</code>, <code>memory</code>, <code>Anthropic</code>, <code>MCP</code>, <code>terminal</code></p>
+<p><code>claude-code</code>, <code>CLI</code>, <code>slash commands</code>, <code>plan mode</code>, <code>agents</code>, <code>skills</code>, <code>memory</code>, <code>Anthropic</code>, <code>MCP</code>, <code>terminal</code></p>
 
 
 

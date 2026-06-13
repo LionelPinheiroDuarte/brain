@@ -10,29 +10,31 @@
         <meta name="author" content="Lionel Pinheiro Duarte">
       
       
-        <link rel="canonical" href="https://lionelpinheiroduarte.github.io/brain/index.en/">
+        <link rel="canonical" href="https://lionelpinheiroduarte.github.io/brain/devops/pipeline/">
       
       
+        <link rel="prev" href="../ansible/">
       
-        <link rel="next" href="../linux/chapter1/">
+      
+        <link rel="next" href="../eas/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>Index - Brain</title>
+        <title>Pipeline - Brain</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,9 +53,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/style.css">
+      <link rel="stylesheet" href="../../stylesheets/style.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#brain" class="md-skip">
+        <a href="#pipeline-cicd" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Brain" class="md-header__button md-logo" aria-label="Brain" data-md-component="logo">
+    <a href="../.." title="Brain" class="md-header__button md-logo" aria-label="Brain" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Index
+              Pipeline
             
           </span>
         </div>
@@ -183,13 +185,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../index.en/" class="md-tabs__link">
           
   
   
@@ -211,7 +211,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../linux/chapter1/" class="md-tabs__link">
+        <a href="../../linux/chapter1/" class="md-tabs__link">
           
   
   
@@ -229,11 +229,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../devops/terraform/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../terraform/" class="md-tabs__link">
           
   
   
@@ -255,7 +257,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../tools/claude/" class="md-tabs__link">
+        <a href="../../tools/claude/" class="md-tabs__link">
           
   
   
@@ -291,7 +293,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Brain" class="md-nav__button md-logo" aria-label="Brain" data-md-component="logo">
+    <a href="../.." title="Brain" class="md-nav__button md-logo" aria-label="Brain" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -306,10 +308,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -319,22 +319,21 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   
@@ -352,7 +351,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -367,37 +366,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Index
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../index.en/" class="md-nav__link">
         
   
   
@@ -413,37 +385,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ranking-system" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Ranking System
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -521,7 +462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../linux/chapter1/" class="md-nav__link">
+      <a href="../../linux/chapter1/" class="md-nav__link">
         
   
   
@@ -553,8 +494,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -572,21 +515,22 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -604,7 +548,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -622,7 +566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../devops/terraform/" class="md-nav__link">
+      <a href="../terraform/" class="md-nav__link">
         
   
   
@@ -650,7 +594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../devops/docker/" class="md-nav__link">
+      <a href="../docker/" class="md-nav__link">
         
   
   
@@ -678,7 +622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../devops/ansible/" class="md-nav__link">
+      <a href="../ansible/" class="md-nav__link">
         
   
   
@@ -703,10 +647,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../devops/pipeline/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipeline
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -722,6 +693,54 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ci-continuous-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CI — Continuous Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CI — Continuous Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#e2e-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E2E Tests
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -734,7 +753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../devops/eas/" class="md-nav__link">
+      <a href="../eas/" class="md-nav__link">
         
   
   
@@ -827,7 +846,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tools/claude/" class="md-nav__link">
+      <a href="../../tools/claude/" class="md-nav__link">
         
   
   
@@ -882,13 +901,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ranking-system" class="md-nav__link">
+  <a href="#ci-continuous-integration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ranking System
+        CI — Continuous Integration
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="CI — Continuous Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#e2e-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E2E Tests
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -915,62 +951,32 @@
 
 
 
-<h1 id="brain">Brain</h1>
-<p>A personal knowledge base for tracking what I learn — tools, concepts, certifications, and infrastructure topics.</p>
-<p>Notes are concise by design: the goal is to remember, not to document everything.</p>
+<h1 id="pipeline-cicd">Pipeline CI/CD</h1>
+<h2 id="ci-continuous-integration">CI — Continuous Integration</h2>
+<p>Continuous integration (CI) is the practice of automatically running a series of checks on every push. The goal is to catch regressions as early as possible, before they reach production.</p>
+<p>A typical CI pipeline follows this order:</p>
+<div class="highlight"><pre><span></span><code>push → lint → unit tests → build → E2E tests → deploy
+</code></pre></div>
+<p>Each step blocks the next. If any step fails, the pipeline stops and the deployment never runs.</p>
 <hr />
-<h2 id="ranking-system">Ranking System</h2>
-<p>Each skill is scored from 1 to 10:</p>
-<table>
-<thead>
-<tr>
-<th>Score</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>I have never heard of this skill or domain.</td>
-</tr>
-<tr>
-<td>2</td>
-<td>I have heard about this skill, but I don't know how to use it or put it into practice.</td>
-</tr>
-<tr>
-<td>3</td>
-<td>I understand the basic concepts of this skill.</td>
-</tr>
-<tr>
-<td>4</td>
-<td>I can apply the basic concepts of this skill.</td>
-</tr>
-<tr>
-<td>5</td>
-<td>I can use this skill independently for simple and routine tasks.</td>
-</tr>
-<tr>
-<td>6</td>
-<td>I can apply this skill effectively for complex tasks and I am able to solve common problems without help.</td>
-</tr>
-<tr>
-<td>7</td>
-<td>I use this skill effectively in various complex situations and I can optimize processes or working methods.</td>
-</tr>
-<tr>
-<td>8</td>
-<td>I master this skill and I am able to train and mentor others in this field.</td>
-</tr>
-<tr>
-<td>9</td>
-<td>I am recognized as an internal expert, capable of developing new methods or improving existing practices thanks to this skill.</td>
-</tr>
-<tr>
-<td>10</td>
-<td>I am a recognized leader in this field, able to innovate and propose unique, cutting-edge solutions that set new standards.</td>
-</tr>
-</tbody>
-</table>
+<h3 id="e2e-tests">E2E Tests</h3>
+<p>Unit and integration tests verify that the code works. E2E tests verify that the user can actually do what they're supposed to do — they test the delivered output, not the source code.</p>
+<p>Problems only E2E tests catch:</p>
+<ul>
+<li>A link points to the wrong URL after a permalink change</li>
+<li>A page returns a directory listing instead of HTML</li>
+<li>The language switcher breaks after a refactor</li>
+<li>An element is hidden by CSS</li>
+</ul>
+<p><strong>Place in the pipeline:</strong> E2E tests run after the build, against the real deployed artifact. They are few in number and focused on critical user flows — navigation, key content, and core interactions.</p>
+<div class="highlight"><pre><span></span><code>        /\
+       /E2E\        ← few, slow, critical paths only
+      /------\
+     /  Integr.\
+    /------------\
+   /  Unit tests  \
+  /________________\
+</code></pre></div>
 
 
 
@@ -1039,10 +1045,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight", "navigation.tabs", "navigation.path", "navigation.top", "navigation.expand", "navigation.sections", "navigation.indexes", "toc.follow", "header.autohide", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["search.suggest", "search.highlight", "navigation.tabs", "navigation.path", "navigation.top", "navigation.expand", "navigation.sections", "navigation.indexes", "toc.follow", "header.autohide", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

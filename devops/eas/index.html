@@ -10,13 +10,13 @@
         <meta name="author" content="Lionel Pinheiro Duarte">
       
       
-        <link rel="canonical" href="https://lionelpinheiroduarte.github.io/brain/devops/terraform/">
+        <link rel="canonical" href="https://lionelpinheiroduarte.github.io/brain/devops/eas/">
       
       
-        <link rel="prev" href="../../linux/chapter1/">
+        <link rel="prev" href="../pipeline/">
       
       
-        <link rel="next" href="../docker/">
+        <link rel="next" href="../../tools/claude/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Terraform - Brain</title>
+        <title>EAS (Expo) - Brain</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#terraform" class="md-skip">
+        <a href="#eas-expo-application-services" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Terraform
+              EAS (Expo)
             
           </span>
         </div>
@@ -235,7 +235,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../terraform/" class="md-tabs__link">
           
   
   
@@ -563,37 +563,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Terraform
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../terraform/" class="md-nav__link">
         
   
   
@@ -609,170 +582,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-terraform" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What is Terraform?
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="What is Terraform?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#iac-vs-manual-provisioning" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        💡 IaC vs manual provisioning
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#file-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        File Structure
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#providers" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Providers
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources-and-data-sources" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Resources and Data Sources
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#variables-and-outputs" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Variables and Outputs
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#core-workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Core Workflow
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#built-in-functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Built-in Functions
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#state-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        State Management
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modules" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Modules
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#terraform-cloud" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Terraform Cloud
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Terraform Cloud">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#important-keywords" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔑 Important Keywords:
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -866,10 +675,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../eas/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EAS (Expo)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -885,6 +721,181 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Concepts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#easjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        eas.json
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="eas.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Commands
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-failures-lessons-learned" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build Failures — Lessons Learned
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Build Failures — Lessons Learned">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-npm-ci-peer-dependency-conflict" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. npm ci peer dependency conflict
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-react-native-architecture-mismatch-paper-apis-removed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. React Native architecture mismatch (Paper APIs removed)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-expo-doctor-version-mismatches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. expo-doctor version mismatches
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Version Management
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#play-store-submission-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Play Store Submission Flow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cicd-with-github-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CI/CD with GitHub Actions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist-before-first-build" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checklist Before First Build
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1017,22 +1028,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-terraform" class="md-nav__link">
+  <a href="#key-concepts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What is Terraform?
+        Key Concepts
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="What is Terraform?">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#easjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        eas.json
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="eas.json">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#iac-vs-manual-provisioning" class="md-nav__link">
+  <a href="#key-settings" class="md-nav__link">
     <span class="md-ellipsis">
       
-        💡 IaC vs manual provisioning
+        Key settings
       
     </span>
   </a>
@@ -1045,10 +1078,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#file-structure" class="md-nav__link">
+  <a href="#common-commands" class="md-nav__link">
     <span class="md-ellipsis">
       
-        File Structure
+        Common Commands
       
     </span>
   </a>
@@ -1056,99 +1089,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#providers" class="md-nav__link">
+  <a href="#build-failures-lessons-learned" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Providers
+        Build Failures — Lessons Learned
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources-and-data-sources" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Resources and Data Sources
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#variables-and-outputs" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Variables and Outputs
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#core-workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Core Workflow
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#built-in-functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Built-in Functions
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#state-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        State Management
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modules" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Modules
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#terraform-cloud" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Terraform Cloud
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Terraform Cloud">
+    <nav class="md-nav" aria-label="Build Failures — Lessons Learned">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#important-keywords" class="md-nav__link">
+  <a href="#1-npm-ci-peer-dependency-conflict" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔑 Important Keywords:
+        1. npm ci peer dependency conflict
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-react-native-architecture-mismatch-paper-apis-removed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. React Native architecture mismatch (Paper APIs removed)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-expo-doctor-version-mismatches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. expo-doctor version mismatches
       
     </span>
   </a>
@@ -1157,6 +1135,50 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Version Management
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#play-store-submission-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Play Store Submission Flow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cicd-with-github-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CI/CD with GitHub Actions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist-before-first-build" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checklist Before First Build
+      
+    </span>
+  </a>
   
 </li>
       
@@ -1183,392 +1205,207 @@
 
 
 
-<h1 id="terraform">Terraform</h1>
-<h2 id="what-is-terraform">What is Terraform?</h2>
-<p><strong>Terraform</strong> is an open-source <strong>Infrastructure as Code (IaC)</strong> tool by HashiCorp. It lets you define infrastructure (servers, networks, DNS, etc.) in configuration files and manage it through a CLI.</p>
-<p>Key properties:</p>
-<ul>
-<li><strong>Declarative</strong> — you describe the desired state, Terraform figures out how to reach it</li>
-<li><strong>Idempotent</strong> — running <code>apply</code> twice produces the same result</li>
-<li><strong>Provider-agnostic</strong> — works with AWS, GCP, Azure, and hundreds of other APIs via <strong>providers</strong></li>
-</ul>
-<blockquote>
-<h3 id="iac-vs-manual-provisioning">💡 <strong>IaC vs manual provisioning</strong></h3>
-<p>Instead of clicking in the AWS console, you write <code>.tf</code> files. The infrastructure becomes versionable, reproducible, and reviewable like code.</p>
-</blockquote>
+<h1 id="eas-expo-application-services">EAS — Expo Application Services</h1>
+<p>EAS is Expo's cloud build and submission service for React Native apps. It handles
+Android/iOS compilation in the cloud, keystore management, and automated Play Store /
+App Store submissions — no local Android Studio or Xcode required.</p>
+<hr />
+<h2 id="key-concepts">Key Concepts</h2>
 <table>
 <thead>
 <tr>
-<th>Skill</th>
-<th style="text-align: center;">Score</th>
+<th>Term</th>
+<th>What it is</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Explain what IaC is</td>
-<td style="text-align: center;">5</td>
+<td><strong>EAS Build</strong></td>
+<td>Cloud compilation — produces <code>.aab</code> (Android) or <code>.ipa</code> (iOS)</td>
 </tr>
 <tr>
-<td>Describe advantages of IaC patterns</td>
-<td style="text-align: center;">5</td>
+<td><strong>EAS Submit</strong></td>
+<td>Uploads a built artifact to Play Store or App Store</td>
 </tr>
 <tr>
-<td>Describe the concept of idempotency</td>
-<td style="text-align: center;">3</td>
+<td><strong>EAS Update</strong></td>
+<td>OTA JS updates (no build needed) — not covered here</td>
+</tr>
+<tr>
+<td><strong>Profile</strong></td>
+<td>A named build configuration in <code>eas.json</code> (e.g. <code>development</code>, <code>production</code>)</td>
+</tr>
+<tr>
+<td><strong>Keystore</strong></td>
+<td>Android signing certificate — EAS generates and stores it automatically</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="file-structure">File Structure</h2>
-<p>A standard Terraform project separates concerns across three files:</p>
-<table>
-<thead>
-<tr>
-<th>File</th>
-<th>Purpose</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>main.tf</code></td>
-<td>Core resources and data sources</td>
-</tr>
-<tr>
-<td><code>variables.tf</code></td>
-<td>Input variable declarations</td>
-</tr>
-<tr>
-<td><code>outputs.tf</code></td>
-<td>Values exposed after apply</td>
-</tr>
-<tr>
-<td><code>terraform.tfvars</code></td>
-<td>Actual variable values (never commit secrets)</td>
-</tr>
-</tbody>
-</table>
+<h2 id="setup">Setup</h2>
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>eas-cli
+eas<span class="w"> </span>login
+eas<span class="w"> </span>init<span class="w">          </span><span class="c1"># links the project, injects projectId into app.json</span>
+</code></pre></div>
 <hr />
-<h2 id="providers">Providers</h2>
-<p>A <strong>provider</strong> is a plugin that translates Terraform resources into API calls.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">terraform</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nb">required_providers</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nb">aws</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="na">source</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;hashicorp/aws&quot;</span>
-<span class="w">      </span><span class="na">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;~&gt; 5.0&quot;</span>
+<h2 id="easjson">eas.json</h2>
+<p>The central config file at the project root:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;cli&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&gt;= 16.0.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;appVersionSource&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;remote&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;build&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;development&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;developmentClient&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;distribution&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;internal&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;production&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;android&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;buildType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;app-bundle&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;autoIncrement&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;submit&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;production&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;android&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;track&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;internal&quot;</span>
+<span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
+</code></pre></div>
+<h3 id="key-settings">Key settings</h3>
+<ul>
+<li><strong><code>appVersionSource: "remote"</code></strong> — versionCode is managed by EAS, not from <code>app.json</code>. Required when using <code>autoIncrement</code>.</li>
+<li><strong><code>autoIncrement: true</code></strong> — EAS increments <code>versionCode</code> automatically on each build. Never set <code>versionCode</code> manually in <code>app.json</code>.</li>
+<li><strong><code>buildType: "app-bundle"</code></strong> — produces <code>.aab</code> (required by Play Store since 2021).</li>
+<li><strong><code>track: "internal"</code></strong> — submits to the Internal Testing track on Play Console.</li>
+</ul>
+<hr />
+<h2 id="common-commands">Common Commands</h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># Build for Android (production profile)</span>
+eas<span class="w"> </span>build<span class="w"> </span>--platform<span class="w"> </span>android<span class="w"> </span>--profile<span class="w"> </span>production
 
-<span class="kr">provider</span><span class="w"> </span><span class="nv">&quot;aws&quot;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="na">region</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">var.aws_region</span>
-<span class="p">}</span>
-</code></pre></div>
-<ul>
-<li>Version constraints (<code>~&gt; 5.0</code>) lock the minor version to avoid breaking changes</li>
-<li>The <code>.terraform.lock.hcl</code> file pins the exact resolved version</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Skill</th>
-<th style="text-align: center;">Score</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Differentiate Terraform vs other IaC tools</td>
-<td style="text-align: center;">4</td>
-</tr>
-<tr>
-<td>Explain multi-cloud and provider-agnostic benefits</td>
-<td style="text-align: center;">3</td>
-</tr>
-<tr>
-<td>Understand providers and provider configuration</td>
-<td style="text-align: center;">5</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="resources-and-data-sources">Resources and Data Sources</h2>
-<p><strong>Resources</strong> create and manage infrastructure:</p>
-<div class="highlight"><pre><span></span><code><span class="kr">resource</span><span class="w"> </span><span class="nc">&quot;aws_instance&quot;</span><span class="w"> </span><span class="nv">&quot;app&quot;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="na">ami</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="nv">data.aws_ami.ubuntu.id</span>
-<span class="w">  </span><span class="na">instance_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">var.instance_type</span>
-<span class="p">}</span>
-</code></pre></div>
-<p><strong>Data sources</strong> read existing infrastructure without managing it:</p>
-<div class="highlight"><pre><span></span><code><span class="kr">data</span><span class="w"> </span><span class="nc">&quot;aws_ami&quot;</span><span class="w"> </span><span class="nv">&quot;ubuntu&quot;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="na">most_recent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="no">true</span>
-<span class="w">  </span><span class="na">owners</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;099720109477&quot;</span><span class="p">]</span><span class="c1">  # Canonical</span>
-<span class="p">}</span>
+<span class="c1"># Submit the latest build to Play Store</span>
+eas<span class="w"> </span>submit<span class="w"> </span>--platform<span class="w"> </span>android
 
-<span class="kr">data</span><span class="w"> </span><span class="nc">&quot;aws_vpc&quot;</span><span class="w"> </span><span class="nv">&quot;default&quot;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="na">default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="no">true</span>
-<span class="p">}</span>
+<span class="c1"># Submit a specific local file</span>
+eas<span class="w"> </span>submit<span class="w"> </span>--platform<span class="w"> </span>android<span class="w"> </span>--path<span class="w"> </span>./build.aab
+
+<span class="c1"># Check build status</span>
+eas<span class="w"> </span>build:list
 </code></pre></div>
-<table>
-<thead>
-<tr>
-<th>Skill</th>
-<th style="text-align: center;">Score</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Understand resources and data sources</td>
-<td style="text-align: center;">5</td>
-</tr>
-</tbody>
-</table>
 <hr />
-<h2 id="variables-and-outputs">Variables and Outputs</h2>
-<p><strong>Variables</strong> make configuration reusable:</p>
-<div class="highlight"><pre><span></span><code><span class="kr">variable</span><span class="w"> </span><span class="nv">&quot;instance_type&quot;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="na">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;EC2 instance type&quot;</span>
-<span class="w">  </span><span class="na">type</span><span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="kt">string</span>
-<span class="w">  </span><span class="na">default</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;t3.micro&quot;</span>
-<span class="p">}</span>
-</code></pre></div>
-<p>Values are provided via <code>terraform.tfvars</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="na">aws_region</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;eu-west-3&quot;</span>
-<span class="na">my_ip</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;x.x.x.x/32&quot;</span>
-</code></pre></div>
-<p><strong>Outputs</strong> expose values after apply:</p>
-<div class="highlight"><pre><span></span><code><span class="kr">output</span><span class="w"> </span><span class="nv">&quot;ssh_command&quot;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="na">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;ssh ubuntu@${aws_instance.app.public_ip}&quot;</span>
-<span class="p">}</span>
-</code></pre></div>
-<table>
-<thead>
-<tr>
-<th>Skill</th>
-<th style="text-align: center;">Score</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Understand variables, outputs and locals</td>
-<td style="text-align: center;">4</td>
-</tr>
-<tr>
-<td>Understand <code>terraform.tfvars</code> and variable precedence</td>
-<td style="text-align: center;">5</td>
-</tr>
-</tbody>
-</table>
+<h2 id="build-failures-lessons-learned">Build Failures — Lessons Learned</h2>
+<h3 id="1-npm-ci-peer-dependency-conflict">1. npm ci peer dependency conflict</h3>
+<p><strong>Symptom:</strong>
+<div class="highlight"><pre><span></span><code>npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+</code></pre></div></p>
+<p>EAS uses <code>npm ci</code> (strict mode) — <code>^</code> ranges that work locally can fail on the build server.</p>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><span class="c1"># .npmrc</span>
+<span class="na">legacy-peer-deps</span><span class="o">=</span><span class="s">true</span>
+</code></pre></div></p>
+<p>Or, better: pin the conflicting package to an exact version instead of a range.
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;react&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;19.2.3&quot;</span><span class="p">,</span>
+<span class="nt">&quot;react-dom&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;19.2.3&quot;</span>
+</code></pre></div></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><code>react-dom</code> must be pinned to the exact same version as <code>react</code>. Using <code>^19.2.3</code>
+causes an ERESOLVE conflict on EAS even though it works locally.</p>
+</div>
 <hr />
-<h2 id="core-workflow">Core Workflow</h2>
-<div class="highlight"><pre><span></span><code>terraform init      # Download providers and modules
-terraform plan      # Preview changes
-terraform apply     # Apply changes
-terraform destroy   # Tear down infrastructure
+<h3 id="2-react-native-architecture-mismatch-paper-apis-removed">2. React Native architecture mismatch (Paper APIs removed)</h3>
+<p><strong>Symptom:</strong> Gradle compilation fails with errors mentioning <code>UIManagerModule</code>,
+<code>LayoutAnimationController</code>, or similar Paper-era APIs.</p>
+<p><strong>Root cause:</strong> React Native 0.75+ removed the Paper bridge. Libraries compiled against
+Paper APIs (like <code>react-native-reanimated</code> v3) fail to build.</p>
+<p><strong>Fix for reanimated v3 → v4:</strong></p>
+<div class="highlight"><pre><span></span><code>npx<span class="w"> </span>expo<span class="w"> </span>install<span class="w"> </span>react-native-reanimated<span class="w"> </span>react-native-worklets
 </code></pre></div>
+<p>Update <code>babel.config.js</code>:
+<div class="highlight"><pre><span></span><code><span class="c1">// Before (v3)</span>
+<span class="nx">plugins</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;react-native-reanimated/plugin&#39;</span><span class="p">]</span>
+
+<span class="c1">// After (v4)</span>
+<span class="nx">plugins</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;react-native-worklets/plugin&#39;</span><span class="p">]</span>
+</code></pre></div></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Always use <code>npx expo install</code> (not <code>npm install</code>) for Expo-managed packages.
+It pins to the version declared in <code>bundledNativeModules.json</code> for your SDK.</p>
+</div>
+<hr />
+<h3 id="3-expo-doctor-version-mismatches">3. expo-doctor version mismatches</h3>
+<p>Run before every build:</p>
+<div class="highlight"><pre><span></span><code>npx<span class="w"> </span>expo-doctor
+</code></pre></div>
+<p>If mismatches are found:
+<div class="highlight"><pre><span></span><code>npx<span class="w"> </span>expo<span class="w"> </span>install<span class="w"> </span>--check<span class="w">    </span><span class="c1"># auto-corrects all mismatched versions</span>
+</code></pre></div></p>
+<p><code>bundledNativeModules.json</code> (inside <code>node_modules/expo/</code>) is the source of truth for
+expected package versions per SDK.</p>
+<hr />
+<h2 id="version-management">Version Management</h2>
 <ul>
-<li><code>init</code> must be run once per project (or after adding providers/modules)</li>
-<li><code>plan</code> shows a diff: what will be created, changed, or destroyed</li>
-<li>State is stored in <code>terraform.tfstate</code> — never edit manually</li>
+<li><strong><code>version</code></strong> in <code>app.json</code> → user-visible string (e.g. <code>"2.0.0"</code>) — update manually</li>
+<li><strong><code>versionCode</code></strong> → internal Android integer — let EAS manage it with <code>autoIncrement: true</code></li>
+<li>Never set both <code>appVersionSource: "remote"</code> and a hardcoded <code>versionCode</code> in <code>app.json</code></li>
 </ul>
-<table>
-<thead>
-<tr>
-<th>Skill</th>
-<th style="text-align: center;">Score</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Install and configure the Terraform CLI</td>
-<td style="text-align: center;">5</td>
-</tr>
-<tr>
-<td>Use <code>terraform init</code></td>
-<td style="text-align: center;">5</td>
-</tr>
-<tr>
-<td>Use <code>terraform plan</code></td>
-<td style="text-align: center;">5</td>
-</tr>
-<tr>
-<td>Use <code>terraform apply</code></td>
-<td style="text-align: center;">5</td>
-</tr>
-<tr>
-<td>Use <code>terraform destroy</code></td>
-<td style="text-align: center;">5</td>
-</tr>
-<tr>
-<td>Use <code>terraform fmt</code> and <code>terraform validate</code></td>
-<td style="text-align: center;">2</td>
-</tr>
-<tr>
-<td>Use <code>terraform state</code> commands</td>
-<td style="text-align: center;">2</td>
-</tr>
-<tr>
-<td>Write → Plan → Apply lifecycle</td>
-<td style="text-align: center;">5</td>
-</tr>
-<tr>
-<td>Understand the dependency graph</td>
-<td style="text-align: center;">3</td>
-</tr>
-</tbody>
-</table>
 <hr />
-<h2 id="built-in-functions">Built-in Functions</h2>
-<div class="highlight"><pre><span></span><code><span class="na">key_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">file</span><span class="p">(</span><span class="nf">pathexpand</span><span class="p">(</span><span class="s2">&quot;~/.ssh/id_rsa.pub&quot;</span><span class="p">))</span>
+<h2 id="play-store-submission-flow">Play Store Submission Flow</h2>
+<div class="highlight"><pre><span></span><code>EAS Build → .aab artifact
+    ↓
+EAS Submit (or manual upload)
+    ↓
+Play Console — Internal Testing track
+    ↓
+Promote to Closed Testing → Open Testing → Production
 </code></pre></div>
-<table>
-<thead>
-<tr>
-<th>Function</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>file(path)</code></td>
-<td>Read a file's contents</td>
-</tr>
-<tr>
-<td><code>pathexpand(path)</code></td>
-<td>Expand <code>~</code> to home directory</td>
-</tr>
-<tr>
-<td><code>toset(list)</code></td>
-<td>Convert a list to a set (used with <code>for_each</code>)</td>
-</tr>
-<tr>
-<td><code>length(list)</code></td>
-<td>Count elements</td>
-</tr>
-<tr>
-<td><code>lookup(map, key)</code></td>
-<td>Safe map lookup with default</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Skill</th>
-<th style="text-align: center;">Score</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Use built-in functions</td>
-<td style="text-align: center;">4</td>
-</tr>
-<tr>
-<td>Use <code>count</code> and <code>for_each</code></td>
-<td style="text-align: center;">2</td>
-</tr>
-<tr>
-<td>Use <code>dynamic</code> blocks</td>
-<td style="text-align: center;">2</td>
-</tr>
-</tbody>
-</table>
+<p>For automated submission, EAS needs a Google Service Account JSON:</p>
+<ol>
+<li>Play Console → Setup → API access → Create service account</li>
+<li>Grant "Release manager" role</li>
+<li>Download JSON → provide path to <code>eas submit</code></li>
+</ol>
 <hr />
-<h2 id="state-management">State Management</h2>
-<p><strong>State</strong> is how Terraform tracks what it has created. It is stored in <code>terraform.tfstate</code>.</p>
+<h2 id="cicd-with-github-actions">CI/CD with GitHub Actions</h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># .github/workflows/release.yml</span>
+<span class="nt">on</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">push</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&#39;v*&#39;</span><span class="p p-Indicator">]</span>
+
+<span class="nt">jobs</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">build-and-submit</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+<span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v4</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/setup-node@v4</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">npm ci</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">expo/expo-github-action@v8</span>
+<span class="w">        </span><span class="nt">with</span><span class="p">:</span>
+<span class="w">          </span><span class="nt">eas-version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">latest</span>
+<span class="w">          </span><span class="nt">token</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.EAS_TOKEN }}</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eas build --platform android --profile production --non-interactive</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eas submit --platform android --non-interactive</span>
+</code></pre></div>
+<p>Required GitHub secrets:
+- <code>EAS_TOKEN</code> — from expo.dev → Account Settings → Access Tokens
+- <code>GOOGLE_SERVICE_ACCOUNT_KEY</code> — service account JSON (base64 or raw)</p>
+<hr />
+<h2 id="checklist-before-first-build">Checklist Before First Build</h2>
 <ul>
-<li>By default, state is <strong>local</strong> — stored on your machine</li>
-<li>In teams or CI/CD, use a <strong>remote backend</strong> (e.g. S3 + DynamoDB for locking)</li>
+<li>[ ] <code>eas.json</code> has <code>appVersionSource: "remote"</code></li>
+<li>[ ] <code>versionCode</code> not hardcoded in <code>app.json</code></li>
+<li>[ ] <code>.npmrc</code> has <code>legacy-peer-deps=true</code> if needed</li>
+<li>[ ] <code>npx expo-doctor</code> passes (21/21)</li>
+<li>[ ] <code>npm run typecheck &amp;&amp; npm run lint</code> — 0 errors</li>
+<li>[ ] <code>app.json</code> has correct <code>bundleIdentifier</code> (iOS) and <code>package</code> (Android)</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="nb">terraform</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kr">backend</span><span class="w"> </span><span class="nv">&quot;s3&quot;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="na">bucket</span><span class="w">         </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;my-tf-state&quot;</span>
-<span class="w">    </span><span class="na">key</span><span class="w">            </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;prod/terraform.tfstate&quot;</span>
-<span class="w">    </span><span class="na">region</span><span class="w">         </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;eu-west-3&quot;</span>
-<span class="w">    </span><span class="na">dynamodb_table</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;tf-lock&quot;</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
-<table>
-<thead>
-<tr>
-<th>Skill</th>
-<th style="text-align: center;">Score</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Understand the purpose of Terraform state</td>
-<td style="text-align: center;">4</td>
-</tr>
-<tr>
-<td>Configure remote backends</td>
-<td style="text-align: center;">2</td>
-</tr>
-<tr>
-<td>Handle state locking</td>
-<td style="text-align: center;">2</td>
-</tr>
-<tr>
-<td>Use <code>terraform import</code></td>
-<td style="text-align: center;">2</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="modules">Modules</h2>
-<p>A <strong>module</strong> is a reusable group of resources. The <strong>Terraform Registry</strong> hosts public modules.</p>
-<div class="highlight"><pre><span></span><code><span class="kr">module</span><span class="w"> </span><span class="nv">&quot;ec2&quot;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="na">source</span><span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;terraform-aws-modules/ec2-instance/aws&quot;</span>
-<span class="w">  </span><span class="na">version</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;~&gt; 5.0&quot;</span>
-<span class="w">  </span><span class="na">instance_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;t3.micro&quot;</span>
-<span class="w">  </span><span class="na">ami</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="nv">data.aws_ami.ubuntu.id</span>
-<span class="p">}</span>
-</code></pre></div>
-<table>
-<thead>
-<tr>
-<th>Skill</th>
-<th style="text-align: center;">Score</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Use public modules from the Terraform Registry</td>
-<td style="text-align: center;">2</td>
-</tr>
-<tr>
-<td>Understand module inputs and outputs</td>
-<td style="text-align: center;">2</td>
-</tr>
-<tr>
-<td>Create and call a local module</td>
-<td style="text-align: center;">2</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="terraform-cloud">Terraform Cloud</h2>
-<p><strong>Terraform Cloud</strong> is HashiCorp's managed platform for running Terraform remotely with collaboration features (remote state, run history, access control).</p>
-<table>
-<thead>
-<tr>
-<th>Skill</th>
-<th style="text-align: center;">Score</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Describe Terraform Cloud features</td>
-<td style="text-align: center;">2</td>
-</tr>
-<tr>
-<td>Understand workspaces in Terraform Cloud</td>
-<td style="text-align: center;">2</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="important-keywords">🔑 <strong>Important Keywords:</strong></h3>
-<p><code>IaC</code>, <code>provider</code>, <code>resource</code>, <code>data source</code>, <code>state</code>, <code>backend</code>, <code>module</code>, <code>variables</code>, <code>outputs</code>, <code>tfvars</code>, <code>idempotent</code>, <code>declarative</code>, <code>HCL</code>, <code>terraform init</code>, <code>terraform apply</code></p>
 
 
 
